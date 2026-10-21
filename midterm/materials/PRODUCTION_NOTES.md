@@ -10,7 +10,7 @@
 
 ## 폴더와 실행
 
-Python 3, Pillow, NumPy와 FFmpeg가 필요합니다. `requirements.txt`를 참고하세요. 렌더링 폰트는 `fonts/`의 Noto Sans CJK KR이며 라이선스는 같은 폴더의 LICENSE에 있습니다.
+Python 3, Pillow, NumPy와 FFmpeg가 필요합니다. `requirements.txt`를 참고합니다. 렌더링 폰트는 `fonts/`의 Noto Sans CJK KR이며 라이선스는 같은 폴더의 LICENSE에 있습니다.
 
 ```bash
 pip install -r requirements.txt
@@ -33,4 +33,4 @@ AI 영화 전체를 처음부터 다시 조립하려면 Higgsfield 원본 클립
 
 ## GitHub
 
-ZIP을 해제한 뒤 `midterm/` 폴더 내부의 파일과 하위 폴더를 저장소의 같은 위치에 업로드합니다. 학기 전체 README는 덮어쓰지 않습니다. 업로드 후 `midterm/README.md`에서 두 영상과 `report/final_report.pdf` 링크를 열어 확인하세요. 이 문서는 ZIP 제작 당시의 재현 안내입니다. 현재 제출 폴더에는 호환성을 개선한 AI 영화가 반영되어 있으며, 업로드 이력은 저장소의 커밋 기록에서 확인할 수 있습니다.
+ZIP을 해제한 뒤 `midterm/` 폴더 내부의 파일과 하위 폴더를 저장소의 같은 위치에 업로드합니다. 학기 전체 README는 덮어쓰지 않습니다. 업로드 후 `midterm/README.md`에서 두 영상과 `report/final_report.pdf` 링크를 열어 확인합니다. 이 문서는 ZIP 제작 당시의 재현 안내입니다. 현재 제출 폴더에는 호환성을 개선한 AI 영화가 반영되어 있으며, 업로드 이력은 저장소의 커밋 기록에서 확인할 수 있습니다.

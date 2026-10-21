@@ -133,7 +133,7 @@ def u04(t):
         put(b, card(560, 96, WHITE, MINT, 4, 30), SW / 2, 235, 1, 1)
         putL(b, T('제육볶음', 44, DEEP), 66, 235, 1, 1)
         put(b, BOWL_P, SW / 2, 480, 1.3 * (0.9 + 0.1 * eob(prog(t, 3.6, 4.2))), prog(t, 3.5, 4.0))
-        put(b, T('집에 있는 재료를 입력하고 비교해 보세요', 26, GRAY, False), SW / 2, 680, 1, prog(t, 4.0, 4.5))
+        put(b, T('보유 재료를 입력해 비교합니다', 26, GRAY, False), SW / 2, 680, 1, prog(t, 4.0, 4.5))
         pr = (0.95 if 5.4 < t < 5.6 else 1)
         put(b, btn('비교하기', 560, 92, MINT, 40), SW / 2, 800, pr, 1)
         ripple(b, SW / 2, 800, t, 5.4)
@@ -145,7 +145,7 @@ def u05(t):
     s = newscr(); appbar(s, t)
     fa = 1 - prog(t, 1.6, 2.0)
     if fa > 0:
-        put(s, T('집에 있는 재료가 있나요?', 36, DEEP), SW / 2, 170, 1, prog(t, 0, 0.3) * fa)
+        put(s, T('보유 재료를 확인합니다', 36, DEEP), SW / 2, 170, 1, prog(t, 0, 0.3) * fa)
         for i, n in enumerate(('고추장', '간장', '설탕')):
             on = int(t >= 0.4 + 0.4 * i)
             bump = 1 + 0.05 * math.sin(math.pi * prog(t, 0.4 + 0.4 * i, 0.7 + 0.4 * i)) if on else 1
@@ -225,7 +225,7 @@ def u07(t):
     # 2026-10-21 revision: enlarge the comparison cards without changing timing.
     f = Image.new('RGB', (W, H), BG)
     ImageDraw.Draw(f).rectangle([0, 0, W, 10], fill=MINT)
-    put(f, T('오늘의 비용과 시간을 비교해요', 62, DEEP), 960, 105, 1, prog(t, 0, 0.4))
+    put(f, T('오늘의 비용과 시간을 비교합니다', 62, DEEP), 960, 105, 1, prog(t, 0, 0.4))
     # Extract the original animated cards, then enlarge them side by side.
     cooking = s.crop((30, 120, 598, 540)).resize((738, 546), Image.Resampling.LANCZOS)
     delivery = s.crop((30, 540, 598, 740)).resize((738, 260), Image.Resampling.LANCZOS)
@@ -256,8 +256,8 @@ def u09(t):
 # ============================================================ U11 남은 재료 (5초)
 def u11(t):
     s = newscr(); appbar(s, t)
-    put(s, T('남은 재료가 있나요?', 40, DEEP), SW / 2, 170, 1, prog(t, 0, 0.3))
-    put(s, T('남아 있는 재료를 직접 선택해 주세요', 24, GRAY, False), SW / 2, 225, 1, prog(t, 0.1, 0.4))
+    put(s, T('남은 재료를 확인합니다', 40, DEEP), SW / 2, 170, 1, prog(t, 0, 0.3))
+    put(s, T('남아 있는 재료를 직접 선택합니다', 24, GRAY, False), SW / 2, 225, 1, prog(t, 0.1, 0.4))
     for i, n in enumerate(('돼지고기', '양파', '대파', '계란')):
         a = 1.0 + 0.55 * i
         on = int(t >= a)
@@ -316,14 +316,14 @@ UI = {  # 이름: (함수, 길이)
 TL = [
     ('S01', 6, 'AI', 'S01', '먹고 싶은 저녁'),
     ('S02a', 3, 'UI', 'U02', '배달 결제 화면'),
-    ('S02b', 3, 'AI', 'S02', '결제 앞에서 멈춘다'),
+    ('S02b', 3, 'AI', 'S02', '결제 앞에서 멈춥니다'),
     ('S03', 6, 'AI', 'S03', '요리를 떠올리지만'),
     ('S04', 6, 'UI', 'U04', '검색에서 서비스로'),
     ('S05a', 2, 'AI', 'S05A', '양념 세 병'),
     ('S05b', 4, 'UI', 'U05', '집에 있는 것은 빼고'),
     ('S06', 6, 'UI', 'U06', '내일 먹을 것까지'),
-    ('S07', 8, 'UI', 'U07', '비교하고 고른다'),
-    ('S08', 5, 'AI', 'S08', '재료가 도착한다'),
+    ('S07', 8, 'UI', 'U07', '비교하고 고릅니다'),
+    ('S08', 5, 'AI', 'S08', '재료가 도착합니다'),
     ('S09a', 2, 'UI', 'U09', '레시피 안내'),
     ('S09b', 3.5, 'AI', 'S09A', '팬 조리'),
     ('S09c', 1.5, 'AI', 'S09B', '완성한 제육과 밥'),

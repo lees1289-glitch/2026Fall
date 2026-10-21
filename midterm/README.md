@@ -14,7 +14,9 @@
 
 - [모션그래픽 영상 열기](video/motion_graphic_90s.mp4) · [AI 영화 열기](video/ai_film_90s.mp4) · [보고서 PDF 열기](report/final_report.pdf)
 - [영상 재생 페이지](index.html): 전체 폴더를 내려받은 뒤 브라우저에서 열면 두 영상을 재생할 수 있습니다.
-- 영상 파일 화면에서 재생되지 않으면 **Download raw file**로 내려받아 재생하세요.
+- 영상 파일 화면에서 재생되지 않으면 **Download raw file**로 내려받아 재생합니다.
+
+한국어 설명 문장과 영상 자막은 보고서·HTML·제작 자료까지 격식체로 통일했습니다.
 
 AI 영화에는 최종 호환성 개선본(H.264 / yuv420p / AAC, 90초)이 반영되어 있습니다.
 
@@ -39,7 +41,7 @@ AI 영화에는 최종 호환성 개선본(H.264 / yuv420p / AAC, 90초)이 반�
 
 ## HTML 시연 및 제작 기록
 
-- [HTML 시연](prototype/yori_prototype.html): 내려받아 브라우저에서 열어 주세요. GitHub의 파일 화면은 실행 화면이 아닙니다.
+- [HTML 시연](prototype/yori_prototype.html): 내려받아 브라우저에서 엽니다. GitHub의 파일 화면은 실행 화면이 아닙니다.
 - [제작·재현 안내](materials/PRODUCTION_NOTES.md)
 - [수정 이력과 확인 범위](CHANGELOG.md)
 - [편집 가능한 보고서 본문](report/report_source.md)

@@ -1,16 +1,16 @@
-자료의 성격: 제출자가 제공한 생성용 프롬프트 문서. 실제 작업별 입력 로그·모델 설정 기록은 이 묶음에 포함되지 않아, 모든 문구가 최종 생성 요청과 동일한지는 확인하지 못했다.
+자료의 성격: 제출자가 제공한 생성용 프롬프트 문서. 실제 작업별 입력 로그·모델 설정 기록은 이 묶음에 포함되지 않아, 모든 문구가 최종 생성 요청과 동일한지는 확인하지 못했습니다.
 
 요리 할래말래 | AI 영화 v5 | Higgsfield 컷별 생성 프롬프트
 기준일: 2026-10-20 · 대사 없음 · 모든 프롬프트는 영어(생성 모델 입력용)
 
 사용 방법
-1. 먼저 R1~R3 참조 이미지를 만들고 마음에 드는 한 세트를 고른다. 이후 모든 컷에 같은 인물·방 참조 이미지를 넣는다.
-2. 컷(S1, S2…)마다 생성 길이를 5초 안팎으로 만들고, 콘티의 목표 길이에 맞춰 자른다. 여유분을 위해 더 길게 생성해도 된다.
-3. 파일 이름은 S01.mp4, S02.mp4 …로 붙여 달라. 순서·길이·소리는 제가 맞춘다.
-4. 도구의 메뉴나 설정 이름은 제가 확인하지 못했다. 아래 문구는 도구에 맞게 조정해서 붙이면 된다.
-5. 얼굴이 계속 달라지면 컷을 늘리기보다 참조 이미지를 바꾸거나 인물을 단순하게(후드, 짧은 머리) 유지한다.
+1. 먼저 R1~R3 참조 이미지를 만들고 마음에 드는 한 세트를 고릅니다. 이후 모든 컷에 같은 인물·방 참조 이미지를 넣습니다.
+2. 컷(S1, S2…)마다 생성 길이를 5초 안팎으로 만들고, 콘티의 목표 길이에 맞춰 자릅니다. 여유분을 위해 더 길게 생성해도 됩니다.
+3. 파일 이름은 S01.mp4, S02.mp4 …로 지정합니다. 순서·길이·소리는 편집 과정에서 맞춥니다.
+4. 도구의 메뉴나 설정 이름은 확인하지 못했습니다. 아래 문구는 도구에 맞게 조정해서 붙이면 됩니다.
+5. 얼굴이 계속 달라지면 컷을 늘리기보다 참조 이미지를 바꾸거나 인물을 단순하게(후드, 짧은 머리) 유지합니다.
 
-공통 블록 (모든 컷 맨 앞에 붙인다)
+공통 블록 (모든 컷 맨 앞에 붙입니다)
 ```text
 Photorealistic restrained Korean slice-of-life short film, landscape 16:9, 24fps, natural soft lighting. Use the same supplied approved fictional adult character and room references in every shot. Korean man in his mid-twenties, short straight black hair, clean-shaven, average build. Default outfit: heather-gray hoodie and charcoal lounge pants unless the shot overrides it. Small Seoul studio apartment: low bed with beige bedding on the left, low light-oak table in the center, compact kitchenette and refrigerator on the right, off-white walls, a warm standing lamp near the bed. Preserve the same identity, room geometry and prop colors in every shot. One continuous shot, small realistic movements, stable camera. No readable text, no captions, no logos, no generated phone or screen UI. No dialogue, no music, no lip-sync. Natural hand anatomy, no extra fingers, no exaggerated facial expressions.
 ```
@@ -34,14 +34,14 @@ The same fictional Korean man in a heather-gray hoodie and charcoal pants sits o
 ```
 
 ------------------------------------------------------------
-컷별 프롬프트 (공통 블록 뒤에 이어 붙인다)
+컷별 프롬프트 (공통 블록 뒤에 이어 붙입니다)
 
 [S01] 목표 6초 — 먹고 싶은 저녁
 ```text
 Wide locked-off 35mm shot from the studio entrance. The man reclines against the bed on frame left holding a black smartphone near his chest. He makes one small thumb movement, then pauses and lifts his head slightly as if thinking about dinner. Quiet evening light. Subtle breathing, nothing else moves.
 ```
 
-[S02] 목표 3초 — 결제 앞에서 멈춘다
+[S02] 목표 3초 — 결제 앞에서 멈춥니다
 ```text
 Close-up of the same man's face on the bed, lit softly by the glow of his phone. He looks at the screen, pauses with mild concern, and lowers the phone a few centimeters. Lips closed. No screen text visible.
 ```
@@ -56,7 +56,7 @@ Medium side shot next to an already open refrigerator. The man looks once into t
 Static close-up of three unlabelled condiment jars on a kitchen counter: one red, one dark brown, one white. Warm light, shallow depth of field, no hands, no text.
 ```
 
-[S08] 목표 5초 — 재료가 도착한다
+[S08] 목표 5초 — 재료가 도착합니다
 ```text
 Medium shot. The man puts down a black smartphone, walks to the apartment door, takes a plain paper grocery bag from the doorway, and sets it on the kitchenette counter. He takes out a pack of pork, an onion and a green onion. Natural quiet movements.
 ```
@@ -92,6 +92,6 @@ Medium locked-off evening shot. The same man in a plain black jacket over a navy
 ```
 
 ------------------------------------------------------------
-편집 쪽에서 만드는 화면 (Higgsfield로 만들지 않는다)
+편집 쪽에서 만드는 화면 (Higgsfield로 만들지 않습니다)
 S2 배달 결제 카드(상표 없음) / S4 검색·홈 / S5 체크와 금액 / S6 장바구니 / S7 비교 카드 / S9 레시피 / S11 남은 재료 / S12 추천 카드 / S14 마라탕 추천 카드 / S15 타이틀
-컷 번호는 01_film_storyboard_v5.md의 타임라인과 같다.
+컷 번호는 01_film_storyboard_v5.md의 타임라인과 같습니다.
