@@ -1,0 +1,3 @@
+Pillow>=10
+numpy>=1.24
+# FFmpeg must be installed separately and available on PATH.
